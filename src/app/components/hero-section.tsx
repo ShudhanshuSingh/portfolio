@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,16 +25,18 @@ export function HeroSection() {
                   <span className="sr-only">LinkedIn</span>
                 </Button>
               </Link>
-              <Button variant="outline" size="icon">
-                <Github className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </Button>
-              <Link href={"shudhanshusingh051@gmail.com"}>
+              <a href="tel:+918779608851">
+                <Button variant="outline" size="icon">
+                  <Phone className="h-4 w-4" />
+                  <span className="sr-only">Phone</span>
+                </Button>
+              </a>
+              <a href={"mailto:shudhanshusingh051@gmail.com"}>
                 <Button variant="outline" size="icon">
                   <Mail className="h-4 w-4" />
                   <span className="sr-only">Email</span>
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           <Image
